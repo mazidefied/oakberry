@@ -1,0 +1,1376 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+a:-webkit-any-link {
+  cursor: default;
+}
+
+.clear {
+	clear: both;
+}
+
+body{
+  background: rgb(248, 248, 248);
+}
+
+/******************************************
+/* NAV AND HEADER
+/*******************************************/
+
+#store_location,
+#store_contact,
+#softaddress{
+  display: none;
+}
+
+header{
+  height: 700px;
+  
+  background: url(new_bowl01.jpg);
+  background-attachment: fixed;
+}
+
+nav li a,
+.welcome *,
+.title_sect *{
+  animation: fadeIn linear 2.5s;
+  -webkit-animation: fadeIn linear 2.5s;
+  -moz-animation: fadeIn linear 2.5s;
+  -o-animation: fadeIn linear 2.5s;
+  -ms-animation: fadeIn linear 2.5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.icon_03{
+  display: none;
+}
+
+
+
+.searchin{
+  display: flex;
+  position:fixed;
+  color: black;
+    display: flex;
+    flex-flow: column;
+    font-weight: 900;
+    font-size: 2rem;
+    background: rgba(255,255,255,1);
+    width: 25rem;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    bottom:  -50px;
+    line-height: 1rem;
+}
+.fancydropspecial{
+  display: flex;
+  position:fixed;
+  color: black;
+    display: flex;
+    flex-flow: column;
+    font-weight: 900;
+    font-size: 2rem;
+    background: rgb(255, 250, 198);
+    width: 25rem;
+    height: 65rem;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    right: 70px;
+    bottom:  -650px;
+    line-height: 1rem;
+}
+.fancydropspecial li img{
+  width: 60px;
+  height: 60px;
+  margin-top: 2.5rem;
+}
+
+.fancydropspecial span{
+  border-bottom: solid black 1px;
+}
+.fancydropspecial p{
+  display: flex;
+  flex-flow: column;
+  line-height: 3rem;
+}
+.fancydropspecial li{
+  background: rgb(255, 206, 212);
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  cursor: pointer;
+  transition-duration: .5s;
+  transition-timing-function: linear;
+  border: 1px solid black;
+}
+
+.fancydropspecial li:first-child{
+    text-align: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    border-bottom: none;
+    text-decoration: none;
+  }
+  
+
+.fancydropspecial li:hover{
+  transform: scale(1.3);
+  color: rgb(189, 161, 111);
+}
+.nodropspecial{
+  display: none;
+}
+
+.normalsearch{
+  display: none;
+}
+
+nav{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position:fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 5rem;
+  background: rgb(236, 143, 154)
+  
+}
+
+.icon_01,
+nav .list_01{
+  display: flex;
+  flex-flow: row;
+  width: 50%;
+}
+
+.list_01 li a{
+  cursor: pointer;
+  transition-duration: .5s;
+  transition-timing-function: linear;
+  color: white;
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+.list_01 li a:hover{
+  /* transform: scale(1.5); */
+  color: yellow;
+}
+
+nav .list_01{
+  justify-content: space-between;
+}
+
+.icon_01{
+  justify-content: left;
+  align-items: center;
+  color: white;
+}
+
+
+/******************************************
+/* welcome HEADER
+/*******************************************/
+
+
+.welcome .button_1{
+  display: flex;
+  flex-flow: column;
+  
+}
+
+.welcome{
+  width: 50%;
+  margin:5rem 25rem;
+  padding-top: 10rem;
+  display: flex;
+  flex-flow:column wrap;
+  align-items: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.welcome span{
+  font-weight: 500;
+  color: darkgoldenrod;
+}
+
+.social_icon{
+  display: flex;
+  width: 25%;
+  margin: 1rem 0 0 .5rem ;
+  justify-content: space-between;  
+}
+
+.social_icon a{
+  cursor: pointer;
+  color: rgb(189, 161, 111);
+  transition-duration: .3s;
+  transition-timing-function: linear;
+}
+
+.social_icon a:hover{
+  transform: scale(1.5);
+  
+}
+
+.welcome h1{
+  color: black;
+  font-size: 9rem;
+  margin: 0 0 2% 0;
+  display: flex;
+  flex-flow: column;
+  line-height: 90%;
+}
+
+.welcome h5{
+  font-size: 3rem;
+  margin: 3rem .5rem;
+  color: darkorange;
+  border-bottom: dashed 3px rgb(236, 143, 154);
+}
+
+.welcome span{
+  font-size: 1.5rem;
+  margin: 0 .5rem
+}
+
+.button_1{
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 0px 0 0 -2px;
+  color: white;
+  background: rgb(211, 137, 0);
+  padding: 15px 45px;
+  border-radius: 5%;
+  box-shadow: 0 5px 0 rgb(139, 91, 0);
+}
+
+.button_1:active {
+  box-shadow: 0 2px 0 rgb(139, 91, 0);
+  transform: translateY(3px);
+}
+
+#new_button a,
+.price{
+  cursor: pointer;
+}
+
+/* .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    border: 0;
+    background: #0087cc;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #006599;
+    color: orange;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 12px 20px;
+  } */
+
+/******************************************
+/* ABOUT US
+/*******************************************/
+
+.disc_contain{
+  height: 900px;
+  background:url(pinkbowl01.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.discovery{
+  display: flex;
+  width: 40%;
+  margin: 5%;
+  flex-flow: column;
+}
+
+.discovery h3{
+  font-size: 7.5rem;
+  margin: 0 0 30px 0 ;
+}
+
+.discovery span,
+.title_sect span,
+.customer_sect span{
+  font-size: 2rem;
+  font-weight: 500;
+  color: orange;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.discovery p{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.7rem;
+}
+
+.button_2{
+  text-align: center;
+  font-size: 2rem;
+  width: 20rem;
+  margin: 5% 0;
+  color: white;
+  background: rgb(211, 137, 0);
+  padding: 15px 30px;
+  border-radius: 5%;
+  box-shadow: 0 5px 0 rgb(139, 91, 0);
+  cursor: pointer;
+    
+  }
+  
+  .button_2:active {
+    box-shadow: 0 2px 0 rgb(139, 91, 0);
+    transform: translateY(3px);
+  }
+
+
+
+/******************************************
+/* specials
+/*******************************************/
+
+.special_contain{
+  height: 300px;
+  padding: 1rem 0;
+  /* background: url(fruit-border02.jpg) no-repeat;
+  background-size: cover; */
+  background: linear-gradient(to right, rgb(236,231,188) 50%, rgb(199, 193, 137));
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.special_menu{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  
+}
+
+
+.title_sect{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.special_contain ul{
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.title_sect h2{
+  font-size: 10rem;
+  margin: 0 0 0 0;
+  border-bottom: dashed 3px rgb(236, 143, 154);
+}
+
+
+
+/* .special_contain ul li a{
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+} */
+
+/******************************************
+/* specility images
+/*******************************************/
+
+.special_img{
+  height: 1000px;
+  background: linear-gradient(to right, rgb(236,231,188) 50%, rgb(199, 193, 137));
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: space-evenly;
+  padding-bottom: 5rem;
+  
+}
+
+.special_img a img{
+  width:400px;
+  height: 400px;
+  border: dashed 3px rgb(236, 143, 154);
+  transition-duration: .3s;
+  transition-timing-function: linear;
+}
+
+.special_img a img:hover{
+  transform: scale(1.2);
+}
+
+.img_01,
+.img_02{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 50%;
+  padding-bottom: 5rem;
+}
+.img_container{
+ display: flex;
+ justify-content: center;
+ transition-duration: .3s;
+  transition-timing-function: linear;
+}
+
+.price:hover{
+  transform: scale(1.2);
+}
+
+ .img_container  .price{
+  height: 10rem;
+  width: 30rem;
+  background: rgb(194, 172, 3);
+  position: absolute; 
+  bottom: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition-duration: .3s;
+  transition-timing-function: linear;
+}
+
+ .img_container .price p{
+  width: 100%;
+  font-weight: 500;
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+ .img_container .price span{
+  width: 100%;
+  font-size: 2rem;
+}
+
+.img_02{
+  margin-top: 5rem;
+}
+
+/******************************************
+/* hours.LOCATIUON
+/*******************************************/
+
+#farmers{
+  margin:0;
+  border-bottom: 3px dashed rgb(236, 143, 154);
+}
+
+.opening_hours{
+  background: url(fruit-border.jpg) no-repeat;
+  background-size: cover;
+  height: 1300px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.hours,
+.hours02{
+  margin: 0rem 0 4rem 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.bowl_food{
+  width: 100%;
+  margin: 0 0 0 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.opening_hours iframe{
+margin: 10rem 0;
+width: 70rem;
+ height: 50rem;
+}
+
+.opening_hours img{
+
+  margin: 10rem 0;
+  height: 50rem;
+  width: 70rem;
+}
+
+.opening_hours .title_sect{
+  padding: 5rem 0 0 0;
+}
+
+.opening_hours .title_sect p{
+  margin: 0% 0;
+  font-size: 3rem;
+  line-height: 4rem;
+
+}
+
+.opening_hours .title_sect span{
+  color: rgb(167, 109, 1);
+}
+
+.opening_hours .title_sect .toph4{
+  margin: 3rem  0 0 0;
+}
+
+.opening_hours .title_sect h4 {
+  color: rgb(167, 109, 1);
+  font-size: 3rem;
+  margin: 0 0 2rem 0;
+}
+
+.hours span{
+  margin: 1% 0 0 -10%;
+  font-size: 2rem;
+  line-height: 1rem;
+}
+
+.hours02{
+  width: 100rem;
+  padding: 2rem 0 0 0 ;
+  border: 3px solid rgb(211, 137, 0);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clickbelow{
+  color: rgb(211, 137, 0);
+  margin: 3rem 0 0 0 ;
+}
+ 
+
+#new_button{
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hours h6,
+.hours02 h6{
+  line-height: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem;
+  font-size: 3.3rem;
+}
+
+/******************************************
+/* REVIEW
+/*******************************************/
+
+.cust_container{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 900px;
+  background: linear-gradient(to right, rgb(236,231,188) 50%, rgb(199, 193, 137));
+
+}
+
+.contact_img{
+  width: 100%;
+  margin: 0 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cust_container .contact_form,
+.cust_container iframe{
+ width: 70rem;
+ height: 50rem;
+}
+
+.contact_name{
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact_name input,
+.contact_name02 input,
+.contact_msg input,
+::placeholder{
+  background: rgb(236,231,188);
+ color: rgb(153, 96, 103);
+
+}
+
+.contact_name input,
+.contact_name02 input,
+.contact_msg input{
+border: dashed rgb(236, 143, 154) 3px;
+}
+.contact_name input{
+width: 45%;
+height: 5rem;
+font-size: 2rem;
+}
+
+.contact_name02 input{
+width: 95%;
+height: 5rem;
+font-size: 2rem;
+}
+.contact_msg input{
+width: 95%;
+height: 15rem;
+font-size: 3rem;
+vertical-align:top;
+}
+
+
+.contact_name02,
+.contact_msg,
+.contact_button{
+  display: flex;
+  justify-content: center;
+}
+
+.cust_container .contact_form{
+  
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.customer_sect{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cust_container .customer_sect span{
+  margin: 0rem 10rem 5rem 18rem;
+}
+
+.customer_sect h2{
+  font-size: 7rem;
+  margin: 7rem 18rem;
+  text-align: left;
+}
+
+
+
+/******************************************
+/* FOOTER
+/*******************************************/
+
+footer{
+  height: 150px;
+  background: rgb(236, 143, 154);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.top_foot{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.left_footer,
+.right_footer{
+  width:15%
+}
+
+.right_footer{
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 0 0 -1rem 0
+}
+
+.right_footer .firstp{
+  margin: 1.5rem 0 0 0;
+}
+
+.right_footer p{
+  margin: 0;
+}
+
+.foot_location{
+  margin: 2rem
+}
+
+footer ul{
+  margin: 0;
+  padding: 0;
+}
+
+.bottom_foot{
+  display: flex;
+  flex-flow: row;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.foot_nav a{
+  color:white;
+  cursor: pointer;
+}
+
+.foot_nav02 a{
+  color: black;
+  cursor: pointer;
+}
+
+.foot_nav,
+.foot_nav02
+{
+  margin: 2rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  font-weight: 500;
+  color: white;
+}
+.left_footer span{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  font-weight: 900;
+  color: black;
+  margin-bottom: -1rem;
+}
+
+@media screen and (max-width: 1280px){
+
+  .fancydropspecial li .X{
+    text-align: right;
+    justify-content: right;
+  }
+  
+  .icon_01,
+  nav .list_01{
+    display: none;
+    margin: 0;
+    width: 0;
+  }
+
+ 
+
+  
+
+  nav .icon_03{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    padding-right: 30px;
+    color: white;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+   
+}
+
+
+
+.tiny_menu{
+    color: black;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    color: black;
+    background: rgba(255,255,255,1);
+    width: 25rem;
+    padding: 2rem;
+    margin: 0;
+    position: absolute;
+    bottom:  -345px;
+    line-height: 5rem;
+  }
+.tiny_menu a{
+  color: black;
+  border-bottom: solid 1px black;
+  border-bottom: 50%;
+  cursor: pointer;
+  transition-duration: .3s;
+  transition-timing-function: linear;
+}
+
+.tiny_menu a:hover{
+  transform: scale(1.3);
+  color: rgb(236, 143, 154);
+}
+  
+  
+.icon_03{
+  animation: fadeIn linear 2.5s;
+  -webkit-animation: fadeIn linear 2.5s;
+  -moz-animation: fadeIn linear 2.5s;
+  -o-animation: fadeIn linear 2.5s;
+  -ms-animation: fadeIn linear 2.5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+
+
+.icon_03:hover{
+  color: yellow;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+header{
+  background-position-x: -150px;
+}
+
+  .welcome{
+    width: 75%;
+  }
+
+  .title_sect .clickbelow{
+    font-size: 2rem;
+  }
+
+  .hours02{
+    width: 60%;
+    
+  }
+
+  .opening_hours .bowl_food{
+    flex-flow: column-reverse;
+    align-items: center ;
+  }
+
+  .opening_hours iframe,
+  .opening_hours img  {
+    width: 50rem;
+ height: 30rem;
+ margin: .5rem 0;
+  }
+
+ 
+  .special_img .img_01,
+  .special_img .img_02{
+    height: 350px;
+    flex-basis: 0%;
+  }
+
+
+  .special_img a img{
+    width:300px;
+    height: 300px;
+  }
+  .img_container  .price{
+    height: 7rem;
+    width: 25rem;
+    }
+    .img_container .price p{
+      width: 100%;
+      font-weight: 500;
+      font-size: 2rem;
+      margin: 0;
+      }
+
+  .disc_contain{
+    background-position-x: -17rem;
+  }
+  .discovery{
+    display: flex;
+    width: 40%;
+    text-align: right;
+  }
+
+  .discovery h3{
+    font-size: 5rem;
+  }
+
+
+  .cust_container h2{
+    margin: 7rem 5rem;
+    font-size: 5rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contact_img iframe{
+    margin: 0 0;
+    width: 35rem;
+     height: 35rem;
+    }
+    .contact_img .contact_form{
+  width: 50%;
+    }
+
+    .right_footer,
+    .left_footer{
+      width: 30%;
+    }
+    .opening_hours{
+      background-position-x: -100px;
+    }
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+
+  body header .welcome{
+    margin: 5rem 10rem;
+    align-items: center;
+  }
+
+  .discovery p{
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+
+  .discovery h3{
+    font-size: 4rem;
+  }
+  .discovery h3{
+    margin-bottom: 0;
+  }
+
+  .disc_contain{
+    background-position-x: -450px;
+  }
+
+  .button_2{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 15rem;
+    margin: 5% 0;
+    color: white;
+    background: rgb(211, 137, 0);
+    padding: 10px 25px;
+    border-radius: 5%;
+    box-shadow: 0 5px 0 rgb(139, 91, 0);
+    cursor: pointer;
+      
+    }
+
+  #farmers{
+    font-size: 6rem;
+  }
+  .opening_hours{
+    background-position-x: -100px;
+  }
+
+  .hours02{
+    width: 70%;
+    
+  }
+
+  .opening_hours .title_sect h4{
+    font-size: 2rem;
+  }
+  #hardaddress{
+    margin: 0;
+  }
+
+}
+
+@media screen and (max-width: 736px) {
+
+  body header .welcome h1{
+    font-size: 6rem;
+  }
+
+  body header .welcome{
+    margin: 5rem auto;
+    align-items: center;
+  }
+
+  .contact_msg input,
+  .contact_name02 input,
+  .contact_name input{
+    font-size: 1.5rem;
+    width: 80%;
+    
+  }
+  .disc_contain{
+    background-position-x: -550px;
+  }
+
+  .title_sect .hours02 .clickbelow{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    }
+  
+  .discovery p{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  
+  .cust_container .contact_form,
+  .cust_container .contact_name
+  {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+    width: 80%;
+    
+  }
+  .contact_name02 input,
+  .contact_name input{
+    width: 100%;
+    border-bottom: none;
+    width: 80%;
+    }
+
+    .contact_name input{
+      margin-left: 6rem;
+    }
+
+  #hardaddress{
+    margin: 0;
+  }
+
+    #about_us{
+      justify-content: space-around;
+    }
+
+  #about_us h2{
+    font-size: 4rem;
+    margin: 4rem 0;
+  }
+ 
+  }
+@media screen and (max-width: 480px) {
+
+  header{
+    height: 600px;
+    background: url(new_bowl01.jpg) no-repeat;
+    background-position-x: -700px;
+    background-attachment: fixed;
+  }
+
+  body header .welcome{
+    margin: 5rem 5rem;
+    align-items: center;
+  }
+  body header .welcome h1{
+    font-size: 4.5rem;
+  }
+  body header .welcome h5{
+    font-size: 2rem;
+    color: black;
+  }
+
+
+  .social_icon{
+    display: flex;
+    width: 50%;
+    margin: 1rem 0 0 .5rem ;
+    justify-content: space-between;  
+  }
+
+
+
+
+
+  .opening_hours .title_sect h4
+  {
+    font-size: 2rem;
+  }
+  .opening_hours .title_sect h6
+  {
+    font-size: 2.5rem;
+  }
+
+.title_sect .hours02 .clickbelow{
+font-size: 2rem;
+line-height: 2.5rem;
+text-align: center;
+}
+
+.title_sect .hours02{
+  margin-bottom: 0;
+}
+
+  .opening_hours{
+    background-position-x: -120px;
+    height: 1000px;
+  }
+
+  #farmers{
+    font-size: 4rem;
+  }
+
+  .bowl_food{
+  justify-content: none;
+  }
+
+  .opening_hours iframe{
+    margin: 10rem 0;
+    width: 100%;
+     height: 40rem;
+    }
+    
+    .opening_hours img{
+    display: none;
+    }
+
+
+    .special_contain span{
+      border-bottom: dashed rgb(236, 143, 154);
+    }
+
+    .special_contain{
+      height: 250px;
+      padding-top: 8rem;
+      padding-bottom: 0rem;
+      margin-top: 5rem;
+    }
+      .title_sect h2{
+        font-size: 5rem;
+        border-bottom: none;
+      }
+
+      .special_img{
+        height: 2000px;
+        display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+      }
+
+.img_01,
+.img_02{
+  position: static;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 0%;
+
+}
+
+.img_container{
+  margin: 1rem 0;
+}
+
+.img_02{
+  margin-top: 2rem;
+}
+
+#bluebowl{
+  position: relative;
+}
+
+#bowl_food_02{position: relative;}
+
+#mixedberry01{position: relative;}
+
+#greenbowl{position: relative;}
+
+#smallbowl{position: relative;}
+
+
+
+#price01{
+  position: absolute;
+  bottom: 0;
+}
+#price02{
+  position: absolute;
+  bottom: 0;
+}
+#price03{
+  position: absolute;
+  bottom: 0;
+}
+#price04{
+  position: absolute;
+  bottom: 0;
+}
+#price05{
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+.disc_contain{
+background-position-x: -750px;
+height: 800px;
+justify-content: center;
+background-attachment:scroll;
+text-align: left;
+}
+
+.discovery{
+  display: flex;
+  width: 70%;
+
+}
+
+
+.cust_container{
+  height: 1200px;
+}
+#about_us,
+#hardaddress{
+display: none;
+}
+
+.contact_img{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#store_location,
+#store_contact{
+  display: flex;
+  
+}
+
+#store_location{
+  margin: 5rem 0 4rem 0;
+}
+
+#store_contact{
+  margin: 5rem 0 0 0;
+}
+
+.contact_name{
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+.contact_name input{
+  width: 100%;
+}
+#contact_name_container{
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 .25rem;
+}
+
+#softaddress{
+  display: flex;
+  font-size: 2rem;
+  font-weight: 500;
+  color: orange;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.left_footer{
+  width: 70%;
+}
+.right_footer{
+  margin-right: 1rem;
+  width:20%;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.right_footer li{
+  font-size: .7rem;
+  margin-right: -1rem;
+}
+
+.bottom_foot p{
+  margin: 0;
+  font-size: .8rem;
+}
+
+
+
+}
+
+
+}
